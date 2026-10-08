@@ -1,13 +1,4 @@
-"""Exercicio 3b: classes de equivalencia e valores-limite da tabela de vento.
-
-Classes de equivalencia:
-  CE1: velocidade < 20         -> "calmo"
-  CE2: 20 <= velocidade < 40   -> "moderado"
-  CE3: 40 <= velocidade < 60   -> "forte"
-  CE4: velocidade >= 60        -> "tempestade"
-Fronteiras: 20, 40 e 60. Para cada uma testamos limite-1, limite e limite+1.
-(A especificacao nao trata velocidade negativa, entao nao ha classe invalida.)
-"""
+# Exercicio 3b: classes de equivalencia e valores-limite da tabela de vento.
 import pytest
 
 from source.faixas import FAIXAS_VENTO, classificar_por_faixas, classificar_vento

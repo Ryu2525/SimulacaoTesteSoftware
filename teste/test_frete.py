@@ -7,7 +7,7 @@ SIM_VALOR, NAO_VALOR = 200, 199.99
 SIM_PESO, NAO_PESO = 30, 30.01
 
 
-# Exercicio 4a: tabela completa, 8 regras
+# Exercicio 4a
 
 @pytest.mark.parametrize("valor, premium, peso, gratis", [
     (SIM_VALOR, True, SIM_PESO, True),     # R1
@@ -23,8 +23,7 @@ def test_frete_tabela_completa(valor, premium, peso, gratis):
     assert tem_frete_gratis(valor, premium, peso) == gratis
 
 
-# Exercicio 4b: tabela reduzida por don't care, 4 regras.
-# Nas posicoes don't care testamos os dois valores para mostrar que nao importam.
+# Exercicio 4b
 
 @pytest.mark.parametrize("valor, premium, peso, gratis", [
     (SIM_VALOR, True, SIM_PESO, True),     # R1

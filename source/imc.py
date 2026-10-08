@@ -1,4 +1,4 @@
-"""Exercicios 1, 2 e 3a: classificador de IMC."""
+# Exercicios 1, 2 e 3a: classificador de IMC.
 from source.faixas import classificar_por_faixas
 
 FAIXAS_IMC = [
@@ -8,16 +8,14 @@ FAIXAS_IMC = [
     (float("inf"), "obesidade"),
 ]
 
-
+# Exercicio 2: peso ou altura nao positivos sao rejeitados
 def calcular_imc(peso, altura):
-    # Exercicio 2: peso ou altura nao positivos sao rejeitados
     if peso <= 0 or altura <= 0:
         raise ValueError("peso e altura devem ser positivos")
     return peso / altura ** 2
 
-
+# Exercicio 3a: reescrita como chamada a funcao generica
 def categorizar_imc(imc):
-    # Exercicio 3a: reescrita como chamada a funcao generica
     return classificar_por_faixas(imc, FAIXAS_IMC)
 
 
