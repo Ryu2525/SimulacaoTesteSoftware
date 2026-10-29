@@ -1,0 +1,4 @@
+[tool.mutmut]
+source_paths = ["source/"]
+also_copy = ["teste/", "pytest.ini"]
+pytest_add_cli_args_test_selection = ["teste"]

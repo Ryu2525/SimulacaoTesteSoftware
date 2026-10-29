@@ -3,3 +3,5 @@ __pycache__/
 .hypothesis/
 .venv/
 *.pyc
+.coverage
+mutants/
